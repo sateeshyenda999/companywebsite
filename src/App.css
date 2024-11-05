@@ -1,0 +1,468 @@
+.card {
+  border: 1px solid #007bff; /* Optional: border color */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Add styles for inputs, buttons, etc. based on the theme */
+.container-fluid{
+  background-color:black;
+}
+.custommargin{
+  background-color: white;
+  margin :5px
+}
+.custom-navbar {
+  background-color: #f8f9fa; /* Change to your desired background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.custom-navbar:hover {
+  background-color: #e2e6ea; /* Darker shade on hover */
+}
+
+.nav-link {
+  position: relative;
+  color: #007bff; /* Default link color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Change to a darker color on hover */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #007bff; /* Underline color */
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Animate underline on hover */
+}
+
+/*TEXT ABOUt*/
+.info-section {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 30px;
+    margin-top: 1px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left;
+    width:100;
+    animation: fadeIn 10s ease-in-out; /* Fade-in animation */
+}
+
+.info-section h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #3498db, #9b59b6); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    transition: transform 0.2s; /* Add slight hover effect */
+}
+
+.info-section p:hover {
+    transform: scale(1.05); /* Scale text slightly on hover */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*clients*/
+
+
+.clients-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.clients-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.clients-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: #ebeff2;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.clients-logos {
+  display: inline-flex;
+  animation: scroll 30s linear infinite;
+}
+
+.client {
+  margin: 0 15px;
+  width: 100px;
+}
+
+.client-logo {
+  width: 120px;
+  height: 150px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/*ABOUT*/
+
+.about-container {
+    max-width: 800px; /* Control the width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-container h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-container p {
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+
+/*ABOUTCSS8*/
+.about-container {
+  width: 100%; /* Set width to 100% */
+  max-width: 1000px; /* You can keep a max-width if you want to limit the maximum size */
+  margin: 80px auto; /* Center the container with auto left and right margins */
+  padding: 20px; /* Add some padding */
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  animation: fadeIn 5s ease; /* Fade-in effect for the container */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; /* Start invisible */
+      transform: translateY(50px); /* Start slightly lower */
+  }
+  to {
+      opacity: 1; /* End visible */
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+.animated-header {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #007bff; /* Primary color for the header */
+  animation: slideIn 3s forwards; /* Slide-in effect for the header */
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%); /* Start off-screen */
+      opacity: 0; /* Start invisible */
+  }
+  to {
+      transform: translateX(0); /* End at original position */
+      opacity: 1; /* End visible */
+  }
+}
+
+.animated-text {
+  line-height: 1.6; /* Improved readability */
+  margin-bottom: 15px; /* Space between paragraphs */
+  opacity: 0; /* Start invisible */
+  animation: fadeInText 1s forwards; /* Fade-in effect for text */
+  color: #9b59b6;
+}
+
+@keyframes fadeInText {
+  0% {
+      opacity: 0; /* Start invisible */
+      transform: translateY(10px); /* Start slightly lower */
+  }
+  100% {
+      opacity: 1; /* End visible */
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Add a staggered animation effect for each paragraph */
+.animated-text:nth-child(1) {
+  animation-delay: 0.2s; /* Delay for the first paragraph */
+}
+.animated-text:nth-child(2) {
+  animation-delay: 0.4s; /* Delay for the second paragraph */
+}
+.animated-text:nth-child(3) {
+  animation-delay: 0.6s; /* Delay for the third paragraph */
+}
+.animated-text:nth-child(4) {
+  animation-delay: 0.8s; /* Delay for the fourth paragraph */
+}
+
+
+/*FOOTER CSS*/
+
+.footer {
+    background-color: #f8f9fa;     /* Light background for footer */
+    padding: 20px 0;
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust the logo size */
+    margin-bottom: 20px; /* Space below logo */
+}
+
+.footer h5 {
+    margin-bottom: 15px; /* Space below headings */
+}
+
+.social-media li {
+    margin-bottom: 10px; /* Space between social media links */
+}
+
+.social-media a {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none; /* No underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.list-unstyled li:hover{
+  text-decoration: #9b59b6;
+  
+}
+
+
+.registration{
+  background-color: #dbcfcf;
+}
+.container {
+  max-width: 1200px;
+}
+
+/* parteners css*/
+
+.card {
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+    
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+}
+
+.card img {
+  width: 80px;
+  height: auto;
+  align-self: center; /* Center the image horizontally */
+  margin-bottom: 15px;
+}
+
+.card-body {
+  flex-grow: 1; /* Allows body to grow and make cards equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between title and text */
+}
+
+.card-title {
+  font-weight: bold;
+  color: #2f8e41;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555;
+  margin-top: 10px;
+}
+
+.company-overview{
+  font-weight: 700; /* Makes the font bold */
+  color: #333; /* Dark color for bold appearance, change as needed */
+  font-size: 3.5rem;
+  text-align: center;
+}
+.company-overviewtext{
+  font-weight: 700; /* Makes the font bold */
+  color:brown; /* Dark color for bold appearance, change as needed */
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.sizedown{
+  margin-top: 70px;
+}
+
+/* Base styling for cards */
+.card {
+  transition: transform 0.9s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-30px); /* Slightly lift the card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+.liststyle{
+  text-decoration-color: #2f8e41;
+  color: #007bff;
+}
+
+/*flip card css */
+
+.card-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-container:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  color: #333;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: #e9ecef;
+  color: #333;
+}
+
+.expanded-card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.expanded-card-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+.service-item {
+  position: relative;
+  overflow: hidden; /* Prevents overflow of the description */
+  text-align: center; /* Centers the title */
+}
+
+.service-image-container {
+  position: relative;
+}
+
+.service-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.service-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(175, 79, 79, 0.7); /* Semi-transparent background for readability */
+  color: white;
+  padding: 76px;
+  opacity: 0; /* Initially hide the description */
+  transition: opacity 0.9s ease; /* Smooth transition for opacity */
+}
+
+.service-item:hover .service-description {
+  opacity: 1; /* Show description on hover */
+}
+
+.service-title {
+  margin-top: 10px; /* Adds space between the title and image */
+}
+.img-fluid{
+  width:500px;
+  height:100px,
+}
