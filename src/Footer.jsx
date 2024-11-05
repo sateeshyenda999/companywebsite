@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Nsight from './Nsight';
-import Techfusion from "./assets/TechFusion.png"
+import Techfusion from "./assets/Techfusion.png"
 
 
 const Footer = () => {
