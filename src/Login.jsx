@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nsight from './Nsight';
+
 import { useNavigate } from 'react-router-dom';
 import { auth, db } from './firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -55,7 +55,7 @@ const Login = () => {
 
     return (
         <>
-        <Nsight/>
+        
         <div className={`d-flex justify-content-center align-items-center vh-100 ${theme}`}>
             <div 
                 style={{
