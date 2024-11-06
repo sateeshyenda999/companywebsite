@@ -4,6 +4,10 @@ import dummy1 from "./assets/dummy1.png";
 import dummy2 from "./assets/dummy2.png";
 import dummy3 from "./assets/dummy3.png";
 import dummy4 from "./assets/dummy4.png";
+import dummy5 from "./assets/dummy5.png";
+import dummy6 from "./assets/dummy6.png";
+import dummy7 from "./assets/dummy7.png"
+import dummy8 from "./assets/dummy8.png"
 
 
 const Employeessay = () => {
@@ -14,40 +18,40 @@ const Employeessay = () => {
             id: 1,
             name: "Alice Johnson",
             title: "Project Manager",
-            image: dummy1,
+            image: dummy6,
             testimonial: "Working here has been an incredible journey. The culture of innovation and the emphasis on personal growth really make this a special place to work."
         },
         {
             id: 2,
             name: "Michael Lee",
-            title: "Software Engineer",
-            image: dummy2,
+            title: " Sr Software Engineer",
+            image: dummy7,
             testimonial: "The collaborative environment at this company is amazing! I’ve never worked somewhere where every team member is so committed to excellence and creativity."
         },
         {
             id: 3,
-            name: "Sarah Martinez",
+            name: "Martinez",
             title: "UX Designer",
-            image: dummy3,
+            image: dummy5,
             testimonial: "As a designer, I feel valued and supported here. The team truly understands the importance of design in delivering quality products."
         },
         {
             id: 4,
             name: "James Williams",
             title: "Data Analyst",
-            image: dummy4,
+            image: dummy8,
             testimonial: "I love the focus on data-driven decisions here. It’s rewarding to see our insights drive meaningful change and success for the company."
         },
         {
             id: 5,
-            name: "James Williams",
+            name: "James",
             title: "Data Analyst",
             image: dummy4,
             testimonial: "I love the focus on data-driven decisions here. It’s rewarding to see our insights drive meaningful change and success for the company."
         },
         {
             id: 6,
-            name: "James Williams",
+            name: "koushik",
             title: "Data Analyst",
             image: dummy4,
             testimonial: "I love the focus on data-driven decisions here. It’s rewarding to see our insights drive meaningful change and success for the company."
