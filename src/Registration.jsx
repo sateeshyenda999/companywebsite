@@ -54,6 +54,7 @@ const Register = () => {
                     email,
                     phone,
                 });
+                window.alert(`Hi ${name}, you registered successfully!`);
                 
                 // Clear form
                 setName('');

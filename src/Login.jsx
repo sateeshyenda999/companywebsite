@@ -1,45 +1,39 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { auth } from './firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { useTheme } from './Themecontext'
 import Nsight from './Nsight';
-import './Nsight.css'
-import backgroundImage from "./assets/Loginimage.png"
-import { ToastContainer, toast } from 'react-toastify';
-import { collectionGroup } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
+import { auth, db } from './firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { useTheme } from './Themecontext';
+import './Nsight.css';
+import backgroundImage from "./assets/Loginimage.png";
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(null);
     const navigate = useNavigate();
-    const { theme, toggleTheme } = useTheme(); // Get theme and toggle function
+    const { theme, toggleTheme } = useTheme();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError(null); // Reset error state before login attempt
-    
+        setError(null);
+
         try {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
-            
-            console.log('User logged in:', userCredential.user.email);
-            toast.success("Login successful!", {
-                position: "top-center",
-                autoClose: 2000,
-                hideProgressBar: true,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: true,
-                progress: undefined,
-                style: {
-                    backgroundColor: '#4CAF50', // Green background
-                    color: '#FFFFFF', // White text
-                    border: '1px solid #388E3C', // Dark green border
-                    borderRadius: '5px', // Rounded corners
-                },
-            });
-            console.log("toastsuccess");
+            const user = userCredential.user;
+
+            // Fetch user details from Firestore
+            const q = query(collection(db, "users"), where("uid", "==", user.uid));
+            const querySnapshot = await getDocs(q);
+            const userData = querySnapshot.docs[0]?.data();
+
+            if (userData && userData.name) {
+                window.alert(`Hi, ${userData.name}! Welcome back!`);
+            } else {
+                window.alert("Hi! Welcome back!");
+            }
+
             navigate('/Home'); // Redirect to the home page after login
         } catch (error) {
             console.error('Error logging in:', error.code, error.message);
@@ -54,17 +48,16 @@ const Login = () => {
             }
         }
     };
-    
-    
+
     const handleRegisterClick = () => {
         navigate('/register');
     };
 
     return (
+        <>
+        <Nsight/>
         <div className={`d-flex justify-content-center align-items-center vh-100 ${theme}`}>
-                
-
-        <div 
+            <div 
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: 'cover',
@@ -74,28 +67,26 @@ const Login = () => {
                     left: 0,
                     width: '100%',
                     height: '100%',
-                    zIndex: -1 // Ensure the background is behind other elements
+                    zIndex: -1
                 }}
             ></div>
-        
+            
             <button 
                 onClick={toggleTheme} 
                 style={{ position: 'absolute', top: '20px', right: '20px', background: 'transparent', border: 'none', cursor: 'pointer' }}
             >
-                {theme === 'light' ? '🌙' : '☀️'} {/* Icon for toggling */}
+                {theme === 'light' ? '🌙' : '☀️'}
             </button>
-            
             <div className="card" style={{ width: '25rem' }}>
                 <div className="card-body">
-                    
-                    <h2 className="text-center " style={{color: 'white'}}>Login</h2>
+                    <h2 className="text-center" style={{color: 'white'}}>Login</h2>
                     {error && <div className="alert alert-danger">{error}</div>}
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label" style={{color: 'white'}}>Email address</label>
                             <input 
                                 type="email" 
-                                className="form-control form-control-sm" // Smaller input
+                                className="form-control form-control-sm" 
                                 id="email" 
                                 value={email} 
                                 onChange={(e) => setEmail(e.target.value)} 
@@ -106,7 +97,7 @@ const Login = () => {
                             <label htmlFor="password" className="form-label" style={{color: 'white'}}>Password</label>
                             <input 
                                 type="password" 
-                                className="form-control form-control-sm" // Smaller input
+                                className="form-control form-control-sm" 
                                 id="password" 
                                 value={password} 
                                 onChange={(e) => setPassword(e.target.value)} 
@@ -129,7 +120,11 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        </>
     );
+    
+    
 };
+
 
 export default Login;

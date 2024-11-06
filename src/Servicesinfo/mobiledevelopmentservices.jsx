@@ -53,11 +53,11 @@ const MobileDevelopmentServices = () => {
                             variants={containerVariants} 
                             initial="hidden" 
                             animate="visible" 
-                            transition={{ duration: 0.5, delay: service.id * 0.1 }}
+                            transition={{ duration: 0.5, delay: service.id * 0.2 }}
                         >
                             <img src={service.image} alt={`${service.title} Image`} className="card-img-top img-fluid" style={{width:'250px'}}/>
                             <div className="card-body">
-                                <h3 className="card-title">{service.title}</h3>
+                            <h3 className="card-title" style={{ color: 'rgb(85, 85, 85)' }}>{service.title}</h3>
                                 <p className="card-text">{service.description}</p>
                             </div>
                         </motion.div>

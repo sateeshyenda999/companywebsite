@@ -134,8 +134,8 @@ const About = () => {
 Experience unwavering trust with our impeccable service, a fusion of punctuality and excellence for consistent deadline commitment, elevated professionalism in forging lasting partnerships, innovative collaboration as crafting bespoke solutions, and data security that guarantees peace of mind – our pledge to you.
                         </p>
                         <ul >
-                            <li className='liststyle'>Trust our cornerstone</li>
-                            <p className='pledge'>Safeguarding your trust, we ensure impeccable service and unwavering reliability.</p>
+                            <li className='liststyle'>Trust our cornerstone
+                            <p className='pledge'>Safeguarding your trust, we ensure impeccable service and unwavering reliability.</p></li>
                             <li className='liststyle'>
                             Consistency Unleashed:
                              <p className='pledge'>Punctuality and excellence merge in our consistent commitment to your deadlines.</p>

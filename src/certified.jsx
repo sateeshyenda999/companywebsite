@@ -31,7 +31,7 @@ const Certified= () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 1}}>
             <h2 className='text-center' 
-                    >Trusted Prtners</h2>
+                    >Trusted Partners</h2>
             <div className="row justify-content-center mt-4" >
                 {certifications.map((cert, index) => (
                     <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>

@@ -103,7 +103,7 @@ body.dark {
     }
 }
 
-/*clients*/
+/*clients scroll*/
 
 
 .clients-section {
@@ -121,7 +121,7 @@ body.dark {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  background: #ebeff2;
+  background: #72acd8;
   width: 100%;
   padding: 20px 0;
 }
@@ -153,11 +153,11 @@ body.dark {
 /*ABOUT*/
 
 .about-container {
-    max-width: 800px; /* Control the width */
-    margin: 20px auto; /* Center the container */
-    padding: 20px; /* Add some padding */
-    background-color: #f8f9fa; /* Light background */
-    border-radius: 8px; /* Rounded corners */
+    max-width: 800px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f8f9fa;
+    border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
@@ -450,7 +450,7 @@ body.dark {
   right: 0;
   background: rgba(175, 79, 79, 0.7); /* Semi-transparent background for readability */
   color: white;
-  padding: 76px;
+  padding: 79px;
   opacity: 0; /* Initially hide the description */
   transition: opacity 0.9s ease; /* Smooth transition for opacity */
 }

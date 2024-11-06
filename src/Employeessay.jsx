@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import dummy1 from "./assets/dummy5.png";
+import dummy1 from "./assets/dummy1.png";
 import dummy2 from "./assets/dummy2.png";
 import dummy3 from "./assets/dummy3.png";
 import dummy4 from "./assets/dummy4.png";
+
 
 const Employeessay = () => {
     const [selectedId, setSelectedId] = useState(null);
@@ -94,7 +95,7 @@ const Employeessay = () => {
                                         <img src={employee.image} alt={employee.name} className="rounded-circle" style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
                                         <motion.h5 className="text-primary">{employee.name}</motion.h5>
                                         <motion.h6 className="text-primary">{employee.title}</motion.h6>
-                                        <motion.p>{employee.testimonial}</motion.p>
+                                        <motion.p style={{color:'black'}}>{employee.testimonial}</motion.p>
                                         <motion.button onClick={() => setSelectedId(null)} className="btn btn-primary mt-3">Close</motion.button>
                                     </div>
                                 ))}
