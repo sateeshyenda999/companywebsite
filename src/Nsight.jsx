@@ -4,17 +4,14 @@ import './Nsight.css'; // Make sure the CSS file is created in the same folder
 
 const Nsight = () => {
     return (
-        <div className="nsight">
+        <div className="nsight" style={{fontSize:'90px'}}>
             <span>T</span>
             <span>E</span>
             <span>C</span>
             <span>H</span>
-            <span>F</span>
+            <span>4</span>
             <span>U</span>
-            <span>S</span>
-            <span>I</span>
-            <span>O</span>
-            <span>N</span>
+            
         </div>
     );
 };

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { auth, db } from './firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { collection, getDocs, query, where } from 'firebase/firestore';
+import Nsight from './Nsight';
 import { useTheme } from './Themecontext';
 import './Nsight.css';
 import backgroundImage from "./assets/Loginimage.png";
@@ -55,8 +56,10 @@ const Login = () => {
 
     return (
         <>
+        <Nsight/>
         
         <div className={`d-flex justify-content-center align-items-center vh-100 ${theme}`}>
+            
             <div 
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
