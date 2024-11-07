@@ -5,6 +5,7 @@ import { db } from './firebase'; // Import Firestore
 import { collection, addDoc } from "firebase/firestore"; // Import Firestore methods
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from './Themecontext';
+import backgroundImage from "./assets/Loginimage.png";
 
 
 const Register = () => {
@@ -74,7 +75,20 @@ const Register = () => {
     };
 
     return (
-        <div className="d-flex justify-content-center align-items-center vh-100 registration" >
+        <div className="d-flex justify-content-center align-items-center vh-100 " >
+            <div 
+                style={{
+                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    zIndex: -1
+                }}
+            ></div>
             <button 
                 onClick={toggleTheme} 
                 style={{ position: 'absolute', top: '20px', right: '20px', background: 'transparent', border: 'none', cursor: 'pointer' }}
@@ -83,10 +97,10 @@ const Register = () => {
             </button>
             <div className="card" style={{ width: '25rem' }}>
                 <div className="card-body">
-                    <h2 className="text-center">Register</h2>
+                    <h2 className="text-center" style={{color:'white'}}>Register</h2>
                     <form onSubmit={handleSubmit}>
-                        <div className="mb-3">
-                            <label htmlFor="name" className="form-label">Name</label>
+                        <div className="mb-3" >
+                            <label htmlFor="name" className="form-label" style={{color:'white'}}>Name</label>
                             <input 
                                 type="text" 
                                 className={`form-control form-control-sm ${errors.name ? 'is-invalid' : ''}`} // Smaller input
@@ -96,8 +110,8 @@ const Register = () => {
                             />
                             {errors.name && <div className="invalid-feedback">{errors.name}</div>}
                         </div>
-                        <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Email address</label>
+                        <div className="mb-3" >
+                            <label htmlFor="email" className="form-label" style={{color:'white'}}>Email address</label>
                             <input 
                                 type="email" 
                                 className={`form-control form-control-sm ${errors.email ? 'is-invalid' : ''}`} // Smaller input
@@ -108,7 +122,7 @@ const Register = () => {
                             {errors.email && <div className="invalid-feedback">{errors.email}</div>}
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="password" className="form-label">Password</label>
+                            <label htmlFor="password" className="form-label" style={{color:'white'}}>Password</label>
                             <input 
                                 type="password" 
                                 className={`form-control form-control-sm ${errors.password ? 'is-invalid' : ''}`} // Smaller input
@@ -119,7 +133,7 @@ const Register = () => {
                             {errors.password && <div className="invalid-feedback">{errors.password}</div>}
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="phone" className="form-label">Phone Number</label>
+                            <label htmlFor="phone" className="form-label" style={{color:'white'}}>Phone Number</label>
                             <input 
                                 type="tel" 
                                 className={`form-control form-control-sm ${errors.phone ? 'is-invalid' : ''}`} // Smaller input
