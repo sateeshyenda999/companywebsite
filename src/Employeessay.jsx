@@ -8,6 +8,7 @@ import dummy5 from "./assets/dummy5.png";
 import dummy6 from "./assets/dummy6.png";
 import dummy7 from "./assets/dummy7.png"
 import dummy8 from "./assets/dummy8.png"
+import dummy9 from "./assets/dummy9.png"
 
 
 const Employeessay = () => {
@@ -44,9 +45,9 @@ const Employeessay = () => {
         },
         {
             id: 5,
-            name: "James",
+            name: "Chenna Keshava Reddy",
             title: "Data Analyst",
-            image: dummy4,
+            image: dummy9,
             testimonial: "I love the focus on data-driven decisions here. It’s rewarding to see our insights drive meaningful change and success for the company."
         },
         {

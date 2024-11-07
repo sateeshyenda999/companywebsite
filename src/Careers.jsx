@@ -11,10 +11,11 @@ import Flowserve from "./assets/Flowserve.png"
 import Salesforce from "./assets/salesforce.png"
 import facebook from "./assets/facebook.png"
 import ibm from "./assets/IBM.png"
+import symbotic from "./assets/symbotic.png"
 
 const Careers = () => {
   const clients = [
-    {name: "Google", logo: sharp},
+    {name: "Sharp", logo: sharp},
     { name: "Amazon", logo: Amazon },
 
     { name: "Apple", logo:facebook },
@@ -23,7 +24,7 @@ const Careers = () => {
     { name: "Facebook", logo: facebook },
     { name: "Salesforce", logo: Salesforce },
     { name: "Adobe", logo: Adobe },
-    { name: "Intel", logo: "/path-to-logo/intel.png" },
+    {name:"symbotic",logo:symbotic},
     { name: "Oracle", logo:oracle }
 ];
   return (

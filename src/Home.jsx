@@ -14,6 +14,7 @@ import Flowserve from "./assets/Flowserve.png"
 import Salesforce from "./assets/salesforce.png"
 import facebook from "./assets/facebook.png"
 import ibm from "./assets/IBM.png"
+import symbotic from "./assets/symbotic.png"
 
 import Footer from "./Footer";
 import Certified from "./certified";
@@ -31,6 +32,7 @@ const Home=()=>{
         { name: "Facebook", logo: facebook },
         { name: "Salesforce", logo: Salesforce },
         { name: "Adobe", logo: Adobe },
+        {name:"symbotic",logo:symbotic},
     
         { name: "Oracle", logo:oracle }
     ];
