@@ -6,6 +6,7 @@ import { collection, addDoc } from "firebase/firestore"; // Import Firestore met
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from './Themecontext';
 import backgroundImage from "./assets/Loginimage.png";
+import Nsight from './Nsight';
 
 
 const Register = () => {
