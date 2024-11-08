@@ -9,10 +9,12 @@ export const ThemeProvider = ({ children }) => {
         setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
     };
 
+
+
     useEffect(() => {
         document.body.className = theme; 
     }, [theme]);
-
+    
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
             {children}

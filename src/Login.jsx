@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import { auth, db } from './firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import Nsight from './Nsight';
+
 import { useTheme } from './Themecontext';
 import './Nsight.css';
+import Techfusion from "./assets/Techfusion.png"
 import backgroundImage from "./assets/Loginimage.png";
+import Techbackground from "./assets/techbackground.jpg";
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -16,6 +18,8 @@ const Login = () => {
     const navigate = useNavigate();
     const { theme, toggleTheme } = useTheme();
 
+
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError(null);
@@ -56,13 +60,12 @@ const Login = () => {
 
     return (
         <>
-        <Nsight/>
         
         <div className={`d-flex justify-content-center align-items-center vh-100 ${theme}`}>
             
             <div 
                 style={{
-                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundImage: `url(${Techbackground})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     position: 'absolute',
@@ -81,7 +84,9 @@ const Login = () => {
                 {theme === 'light' ? '🌙' : '☀️'}
             </button>
             <div className="card" style={{ width: '25rem' }}>
+            <img src={Techfusion}  style={{ width: '100%', height: 'auto' }}  />
                 <div className="card-body">
+                
                     <h2 className="text-center" style={{color: 'white'}}>Login</h2>
                     {error && <div className="alert alert-danger">{error}</div>}
                     <form onSubmit={handleSubmit}>
@@ -125,8 +130,6 @@ const Login = () => {
         </div>
         </>
     );
-    
-    
 };
 
 
