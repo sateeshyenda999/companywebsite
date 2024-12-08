@@ -9,7 +9,7 @@ const Nsight = () => {
             <span>E</span>
             <span>C</span>
             <span>H</span>
-            <span>4</span>
+            
             <span>U</span>
             
         </div>
