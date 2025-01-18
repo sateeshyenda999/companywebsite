@@ -134,15 +134,15 @@ const About = () => {
 Experience unwavering trust with our impeccable service, a fusion of punctuality and excellence for consistent deadline commitment, elevated professionalism in forging lasting partnerships, innovative collaboration as crafting bespoke solutions, and data security that guarantees peace of mind – our pledge to you.
                         </p>
                         <ul >
-                            <li className='liststyle' style={{color:'GrayText'}}>Trust our cornerstone
+                            <li className='liststyle' style={{color:'purple'}}>Trust our cornerstone
                             <p className='pledge'>Safeguarding your trust, we ensure impeccable service and unwavering reliability.</p></li>
-                            <li className='liststyle' style={{color:'GrayText'}}>
+                            <li className='liststyle' style={{color:'purple'}}>
                             Consistency Unleashed:
                              <p className='pledge'>Punctuality and excellence merge in our consistent commitment to your deadlines.</p>
-                             <li className='liststyle'style={{color:'GrayText'}}>Innovative Collaboration:</li>
+                             <li className='liststyle'style={{color:'purple'}}>Innovative Collaboration:</li>
                              <p>Beyond service, we’re partners crafting bespoke solutions for your success.</p>
 
-                           <li className='liststyle' style={{color:'GrayText'}}>Data’s Fortress:</li>
+                           <li className='liststyle' style={{color:'purple'}}>Data’s Fortress:</li>
                            <p>Confidentiality reigns as we secure your data, ensuring peace of mind.</p>
 
 
