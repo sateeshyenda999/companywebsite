@@ -25,15 +25,15 @@ const About = () => {
         
             <div className="about-container">
             
-                <h1 className="animated-header">About TechFusion Solutions</h1>
+                <h1 className="animated-header">About Nsight </h1>
                 <p className="animated-text">
-                    TechFusion Solutions is a premier provider of technology services dedicated to delivering high-quality IT solutions for businesses of all sizes. Established in 2010, we believe in building lasting partnerships with our clients, helping them navigate the complexities of the digital age.
+                    Nsight  is a premier provider of technology services dedicated to delivering high-quality IT solutions for businesses of all sizes. Established in 2010, we believe in building lasting partnerships with our clients, helping them navigate the complexities of the digital age.
                 </p>
                 <p className="animated-text">
                     Our mission is to drive business growth and efficiency through tailored, innovative solutions that prioritize client success.
                 </p>
                 <p className="animated-text">
-                    Driven by core values of excellence, integrity, and innovation, our team collaborates with organizations to understand their unique needs and goals. With expertise across software development, cloud computing, cybersecurity, and data analytics, TechFusion Solutions combines technical skill with a commitment to customer satisfaction.
+                    Driven by core values of excellence, integrity, and innovation, our team collaborates with organizations to understand their unique needs and goals. With expertise across software development, cloud computing, cybersecurity, and data analytics, Nsight Solutions combines technical skill with a commitment to customer satisfaction.
                 </p>
                 <p className="animated-text">
                     As we look to the future, we are committed to staying at the forefront of technological advancements and delivering solutions that empower businesses to thrive in an ever-evolving landscape.
