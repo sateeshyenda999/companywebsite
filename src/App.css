@@ -335,7 +335,7 @@ body.dark {
 }
 .company-overviewtext{
   font-weight: 700; /* Makes the font bold */
-  color:brown; /* Dark color for bold appearance, change as needed */
+  color:rgb(18, 4, 26); /* Dark color for bold appearance, change as needed */
   font-size: 1.5rem;
   text-align: center;
 }

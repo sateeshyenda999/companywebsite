@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Nsight from './Nsight';
 import Techfusion from "./assets/Techfusion.png"
+import nsight from "./assets/nsightlogo1.png"
 
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row py-4">
                     <div className="col-md-3">
-                        <img src={Techfusion} alt="TechMojo Logo" className="footer-logo" />
+                        <img src={nsight} alt="TechMojo Logo" className="footer-logo" />
                     </div>
                     <div className="col-md-3">
                         <h5>Solutions</h5>
@@ -56,7 +57,7 @@ const Footer = () => {
                 </div>
                 <div className="row py-2">
                     <div className="col text-center">
-                        <p>Tech Fusion solutions Pvt Ltd Level-1, Wing-1, Block-B, Cyber Gateway, HITEC City, Madhapur, Hyderabad-500081</p>
+                        <p>Nsight solutions Pvt Ltd Level-1, Wing-1, Block-B, Cyber Gateway, HITEC City, Madhapur, Hyderabad-500081</p>
                         <p>© 2024, All rights reserved</p>
                     </div>
                 </div>

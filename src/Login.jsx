@@ -86,7 +86,7 @@ const Login = () => {
                 </button>
 
                 <div className="card" style={{ width: '25rem' }}>
-                    <div className="d-flex justify-content-center align-items-center py-2">
+                    <div className="d-flex justify-content-center align-items-center ">
                         <Nsight />
                     </div>
                     <div className="card-body">

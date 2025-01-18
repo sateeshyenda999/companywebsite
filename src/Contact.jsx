@@ -57,7 +57,7 @@ const Contact = () => {
                 {/* Headquarters Details Column */}
                 <div className="col-md-6">
                     <h4 className="mb-3">Our Headquarters</h4>
-                    <p><strong>Company Name:</strong> Techno Softwares</p>
+                    <p><strong>Company Name:</strong>Nsight Solutions</p>
                     <p><strong>Address:</strong> 123 Tech Avenue, Suite 100</p>
                     <p><strong>Street:</strong> Innovation Street</p>
                     <p><strong>City:</strong> Silicon Valley</p>

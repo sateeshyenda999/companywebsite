@@ -15,8 +15,7 @@ const Banner = () => {
                         alt="Business Solution 1"
                     />
                     <Carousel.Caption>
-                        <h3>Solution 1</h3>
-                        <p>Brief description of the solution.</p>
+                       
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -27,8 +26,7 @@ const Banner = () => {
                         alt="Business Solution 2"
                     />
                     <Carousel.Caption>
-                        <h3>Solution 2</h3>
-                        <p>Brief description of the solution.</p>
+                       
                     </Carousel.Caption>
                 </Carousel.Item>
 
@@ -39,8 +37,7 @@ const Banner = () => {
                         alt="Business Solution 3"
                     />
                     <Carousel.Caption>
-                        <h3>Solution 3</h3>
-                        <p>Brief description of the solution.</p>
+                     
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

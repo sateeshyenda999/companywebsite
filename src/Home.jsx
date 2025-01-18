@@ -41,9 +41,9 @@ const Home=()=>{
             <Header/>
         <Banner/>
         <div className="info-section text-center p-4">
-                <h2 className=".animated-header">TechFusion Solutions</h2>
+                <h2 className=".animated-header">NSIGHT</h2>
                 <p className=".animated-text">
-                    TechFusion Solutions is a premier technology services provider that offers 
+                    Nsight is a premier technology services provider that offers 
                     innovative IT solutions to businesses of all sizes. Established in 2010, 
                     we prioritize excellence and customer satisfaction, staying ahead of 
                     technological trends. Our skilled team collaborates closely with clients 

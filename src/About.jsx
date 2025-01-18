@@ -50,7 +50,7 @@ const About = () => {
                 >
                     <h2 className="mb-4 text-danger company-overview">Company Overview</h2>
                     <p className="mb-6 company-overviewtext">
-                        Enter the realm of technological marvels with Techno Softwares, the vanguard of India's software development outsourcing. From visionary individuals to dynamic SMEs and global corporate titans, we orchestrate bespoke solutions that redefine possibilities across the globe.
+                        Enter the realm of technological marvels with Nsight solutions, the vanguard of India's software development outsourcing. From visionary individuals to dynamic SMEs and global corporate titans, we orchestrate bespoke solutions that redefine possibilities across the globe.
                     </p>
                 </motion.div>
 
